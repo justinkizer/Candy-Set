@@ -15,13 +15,6 @@ class Box extends Set {
         return false;
     }
 
-    addCandy(candy, coords) {
-        if (isStuck(coords)) {
-            return false;
-        }
-        return super(candy, coords);
-    }
-
     removeCandy(coords) {
         if (isStuck(coords)) {
             return false;
