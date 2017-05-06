@@ -15,6 +15,9 @@ class Candy extends Phaser.Sprite {
         this.type = type;
         this.color = color;
         game.add.existing(this);
+
+        this.inputEnabled = true;
+        this.input.enableDrag();
     }
 
     isEqual(candy) {
