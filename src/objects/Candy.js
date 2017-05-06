@@ -1,17 +1,25 @@
-class Candy {
+var colorMap = function(color) {
+    switch (color) {
+        case 'red':
+            return 0;
+        case 'orange':
+            return 1;
+        case 'blue':
+            return 2;
+    }
+};
 
-    constructor(game, type, color) {
+class Candy extends Phaser.Sprite {
+    constructor(game, type, color, x, y) {
+        super(game, x, y, type, colorMap(color));
         this.type = type;
         this.color = color;
-
-        //super(game);
-        //this.game.stage.addChild(this);
+        game.add.existing(this);
     }
 
     isEqual(candy) {
         return (this.type === candy.type) && (this.color === candy.color);
     }
-
 }
 
 export default Candy;
