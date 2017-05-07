@@ -5,6 +5,7 @@ class Level extends Phaser.State {
     preload() {}
 
     create() {
+        this.game.add.tileSprite(0, 0, 800, 600, 'background');
         let center = { x: this.game.world.centerX, y: this.game.world.centerY };
         var box = [
             { type: "gummyBear", color: "red", coord: { i: 0, j: 0 } },
@@ -22,7 +23,7 @@ class Level extends Phaser.State {
             { type: "candyCorn", color: "orange", coord: { i: 3, j: 1 } },
             { type: "candyCorn", color: "red", coord: { i: 3, j: 2 } }
         ];
-        new Box(this.game, center.x, center.y, 4, 4, box, 50);
+        new Box(this.game, 30, 70, 4, 4, box, 50);
     }
 
 }

@@ -7,6 +7,7 @@ class Preload extends Phaser.State {
         this.game.load.spritesheet('jollyRancher', './images/jollyRancher.png', 96, 39, 3);
         this.game.load.spritesheet('peppermint', './images/peppermint.png', 96, 100, 3);
         this.game.load.spritesheet('box', './images/box.png', 380, 380, 1);
+        this.game.load.image('background', './images/background.png');
         // this.game.load.spritesheet('peppermintStick', './images/peppermintStick.png', 201, 200, 3);
     }
 
