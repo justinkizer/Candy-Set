@@ -10,7 +10,7 @@ var colorMap = function(color) {
 };
 
 class Candy extends Phaser.Sprite {
-    constructor(game, type, color, x, y) {
+    constructor(game, type, color, x, y, size) {
         super(game, x, y, type, colorMap(color));
         this.type = type;
         this.color = color;
@@ -18,6 +18,9 @@ class Candy extends Phaser.Sprite {
 
         this.inputEnabled = true;
         this.input.enableDrag();
+        this.height = size;
+        if (this.width > size);
+        this.width = size;
     }
 
     isEqual(candy) {

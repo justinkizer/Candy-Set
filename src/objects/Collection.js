@@ -5,7 +5,6 @@ class Collection {
         this.width = width;
         this.height = height;
         this.candies = candies;
-        //super(game);
         //this.game.stage.addChild(this);
     }
 
@@ -47,4 +46,4 @@ class Collection {
     }
 }
 
-export default Set;
+export default Collection;

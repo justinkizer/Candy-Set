@@ -1,10 +1,6 @@
-class Set extends Collection {
+import Collection from 'objects/Collection';
 
-    constructor(game, width, height, candies) {
-        super(game, width, height, candies);
-        //this.game.stage.addChild(this);
-    }
-
+class CandySet extends Collection {
     contains(candy) {
         for (var row of this.candies) {
             for (var el of row) {
@@ -39,8 +35,8 @@ class Set extends Collection {
         if (contains(candy)) {
             return false;
         }
-        return super(candy, coords);
+        return super.AddCandy(candy, coords);
     }
 }
 
-export default Set;
+export default CandySet;
