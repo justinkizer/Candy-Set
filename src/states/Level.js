@@ -19,9 +19,9 @@ class Level extends Phaser.State {
             { type: "jollyRancher", color: "red", coord: { i: 2, j: 0 } },
             { type: "jellyBean", color: "red", coord: { i: 2, j: 1 } },
             { type: "jellyBean", color: "orange", coord: { i: 2, j: 3 } },
-            { type: "candyCorn", color: "blue", coord: { i: 3, j: 0 } },
-            { type: "candyCorn", color: "orange", coord: { i: 3, j: 1 } },
-            { type: "candyCorn", color: "red", coord: { i: 3, j: 2 } }
+            { type: "peppermintSquare", color: "blue", coord: { i: 3, j: 0 } },
+            { type: "peppermintSquare", color: "orange", coord: { i: 3, j: 1 } },
+            { type: "peppermintSquare", color: "red", coord: { i: 3, j: 2 } }
         ];
         new Box(this.game, 30, 70, 4, 4, box, 50);
     }
